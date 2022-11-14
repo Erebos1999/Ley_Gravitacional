@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIERRA SOL</title>
+    <!-- estilo boots; estilos; icono; js boots /-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <a class="navbar-brand" href="#">
+                    <img class="rounded-circle" src="imagenes/icono.jpg" width="50" alt="logo">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Concepto">Concepto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Ejercicio">Ejercicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacto">Contactame</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <H1>Ley de Gravitacion Universal</H1>
+        <img class="imgperfil" src="imagenes/isac.jpg" class="img-fluid" alt="perfil">
+        <h2>Isaac Newton</h2>
+    </header>
+    <section>
+
+        <h2 class="titulo" id="Concepto">Concepto</h2>
+        <p>La ley de gravitación universal es una ley física clásica que describe la fuerza o interacción gravitatoria entre distintos cuerpos con masa, fue formulada por Isaac Newton en su libro Philosophiae Naturalis Principia Mathematica, publicado el
+            5 de julio de 1687,establece que una partícula de masa M1 ejerce una fuerza de atracción sobre otra de masa M2, que es directamente proporcional al producto de las dos masas e inversamente proporcional al cuadrado de la distancia que las separa.
+            Esta ley es aplicable al estudio del movimiento de los cuerpos en el universo y, concretamente, ha sido utilizada para validar las leyes de Kepler del movimiento planetario.</p>
+        <img src="imagenes/formula.jpg" class="img-fluid" alt=""><br>
+        <p>Sin embargo, hoy en día sabemos que, a partir de cierta cantidad de masa, esta ley pierde su validez (en caso de objetos supermasivos), y se hace necesario trabajar con la Ley de Relatividad General formulada en 1915 por Albert Einstein. La Ley
+            de Gravitación Universal es entonces una aproximación a la ley de Einstein pero aun así es útil para comprender la mayor parte de los fenómenos gravitatorios del Sistema Solar.</p>
+
+
+
+        <h2 class="titulo" id="Ejercicio">Ejemplo Practico</h2>
+        <p> Resolvamos un ejercicio como ejemplo de la aplicación de esta fórmula.</p>
+
+        <pre>Determina cuántas veces la fuerza de atracción entre el sol y la tierra es mayor que la fuerza de atracción entre la tierra y la luna sabiendo que: 
+        Masa de la Tierra = 5.98*(10^28)
+        Masa del Sol = 2.0*(10^30)
+        Masa de la Luna = 7.36*(10^22)
+        Distancia Tierra-Sol = 149.6 *(10^9)
+        Distancia Tierra-Luna = 384.4*(10^6)</pre>
+
+
+        <button onclick="ejercicio()">Resolver</button><br>
+
+        <h2 class="titulo">Respuesta</h2>
+        <p>Teniendo los datos podemos calcular que:</p>
+        <ul>
+            <li>Fuerza Gravitacional Tierra-Sol=</li>
+            <p id="fTS" class="respuestas"></p>
+            <li>Fuerza Gravitacional Tierra-Luna=</li>
+            <p id="fTL" class="respuestas"></p>
+        </ul>
+        <p>Por tanto podemos resolver que la fuerza de atracción entre el sol y la tierra es:</p>
+        <p id="Resultado" class="respuestas"></p>
+        <p>veces mayor que la fuerza de atracción entre la tierra y la luna</p>
+
+
+    </section>
+    <section>
+        <h2 class="titulo" id="Galeria">Galeria de Imagenes</h2>
+        <div class="container text-center galeria">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <img src="imagenes/tierra sol.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="imagenes/form.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="imagenes/tierra luna.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="imagenes/manza.webp" alt="">
+                </div>
+            </div>
+    </section>
+    <section>
+        <script>
+            function ejercicio() {
+                var g = 6.67 * Math.pow(10, -11)
+                var mT = 5.98 * Math.pow(10, 28)
+                var mS = 2.0 * Math.pow(10, 30)
+                var mL = 7.36 * Math.pow(10, 22)
+                var dST = 149.6 * Math.pow(10, 9)
+                var dLT = 384.4 * Math.pow(10, 6)
+                var fST = g * ((mT * mS) / (dST * dST))
+                var fLT = g * ((mT * mL) / (dLT * dLT))
+                document.getElementById('fTS').innerHTML = fST
+                document.getElementById('fTL').innerHTML = fLT
+                var Resultado = fST / fLT
+                document.getElementById('Resultado').innerHTML = Resultado
+
+            }
+        </script>
+
+    </section>
+
+
+    <footer class="d-flex flex-column align-items-center justify-content-center">
+        <h2 class="titulo" id="Contacto">Contactos</h2>
+
+        <div class="row">
+            <div class="col-3 redes d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://es-la.facebook.com/jrmc99" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a></div>
+            <div class="col-3 redes d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://www.instagram.com/jrmc_99" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></div>
+
+            <div class="col-3 redes d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://wa.me/59168028878" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a></div>
+            <div class="col-3 redes d-flex flex-wrap align-items-center justify-content-center">
+                <a href="mailto:rodrigomarcac@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a></div>
+
+        </div>
+
+
+        <p class="textofooter"> Autor: Joel Rodrigo Marca Cordova</p>
+    </footer>
+
+</body>
+
+
+</html>
